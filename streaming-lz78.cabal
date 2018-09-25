@@ -1,0 +1,29 @@
+name:                streaming-lz78
+version:             0.1.0.0
+synopsis:            streaming lz78 compression
+-- description:
+homepage:            https://github.com/chessai/streaming-lz78
+license:             BSD3
+license-file:        LICENSE
+author:              chessai
+maintainer:          chessai1996@gmail.com
+-- copyright:
+category:            Data
+build-type:          Simple
+extra-source-files:  CHANGELOG.md
+cabal-version:       >=1.10
+
+library
+  exposed-modules:
+    Streaming.LZ78
+  -- other-modules:
+  -- other-extensions:
+  build-depends:
+      base >=4.7 && <4.13
+    , comonad 
+    , containers
+    , hashable 
+    , streaming
+    , unordered-containers
+  hs-source-dirs:      src
+  default-language:    Haskell2010
